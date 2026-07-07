@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Devraj Singh</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="proj-page-body">
+
+<!-- glow orbs -->
+<div class="orb orb-purple"></div>
+<div class="orb orb-blue"></div>
+
+<!-- ═══ NAVBAR ═══ -->
+<header class="header scrolled" id="header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">Devraj</a>
+    <nav class="nav-pill">
+      <a href="about.html" class="nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        About
+      </a>
+      <a href="projects.html" class="nav-item active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        Projects
+      </a>
+      <a href="contact.html" class="nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+        Contact
+      </a>
+    </nav>
+    <a href="https://www.linkedin.com/in/devraj-singh-74235729a" target="_blank" rel="noopener" class="linkedin-nav" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+    </a>
+  </div>
+</header>
+
+<!-- ═══ PROJECTS PAGE ═══ -->
+<main class="proj-main">
+
+  <!-- heading -->
+  <div class="proj-head fade-up">
+    <h1 class="proj-title">Projects</h1>
+    <p class="proj-sub">Products I've designed, built, and shipped</p>
+  </div>
+
+  <!-- filters -->
+  <div class="filters fade-up d1">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="apps">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+      Apps
+    </button>
+    <button class="filter-btn" data-filter="websites">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      Websites
+    </button>
+  </div>
+
+  <!-- cards grid -->
+  <div class="pcard-grid">
+
+    <!-- ★ FEATURED: Jublet -->
+    <div class="pcard pcard-featured fade-up d1" data-category="apps">
+      <div class="pcard-preview-wrap">
+        <div class="pcard-screen-bg jublet-bg">
+          <iframe
+            src="https://jublet-apps.vercel.app/"
+            class="pcard-iframe"
+            loading="lazy"
+            scrolling="no"
+            tabindex="-1"
+            title="Jublet preview"
+          ></iframe>
+          <div class="pcard-screen-overlay"></div>
+        </div>
+        <span class="pcard-live-dot">
+          <span class="dot-pulse"></span> Live
+        </span>
+        <span class="pcard-badge-top">APP</span>
+      </div>
+      <div class="pcard-body">
+        <div class="pcard-name-row">
+          <h3 class="pcard-name">Jublet</h3>
+          <span class="pcard-tag-inline">Roommate Finder</span>
+        </div>
+        <p class="pcard-desc">Your all-in-one app for finding compatible roommates in Bengaluru — match by lifestyle, budget &amp; vibe. Features in-app chat, onboarding flow, and real listings.</p>
+        <div class="pcard-divider" style="background:linear-gradient(90deg,#7c3aed,#3b82f6)"></div>
+        <div class="pcard-tags">
+          <span>React</span><span>Node.js</span><span>MongoDB</span><span>Vercel</span>
+        </div>
+        <div class="pcard-actions">
+          <a href="https://jublet-apps.vercel.app/" target="_blank" rel="noopener" class="pcard-btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ★ FEATURED: Nova Hospital -->
+    <div class="pcard pcard-featured fade-up d2" data-category="websites">
+      <div class="pcard-preview-wrap">
+        <div class="pcard-screen-bg nova-bg">
+          <iframe
+            src="https://nova-hospital-3vog.vercel.app/"
+            class="pcard-iframe"
+            loading="lazy"
+            scrolling="no"
+            tabindex="-1"
+            title="Nova Hospital preview"
+          ></iframe>
+          <div class="pcard-screen-overlay"></div>
+        </div>
+        <span class="pcard-live-dot">
+          <span class="dot-pulse nova-pulse"></span> Live
+        </span>
+        <span class="pcard-badge-top nova-badge">WEB</span>
+      </div>
+      <div class="pcard-body">
+        <div class="pcard-name-row">
+          <h3 class="pcard-name">Nova Hospital</h3>
+          <span class="pcard-tag-inline nova-tag-inline">Healthcare</span>
+        </div>
+        <p class="pcard-desc">Professional hospital website with appointment booking, doctor profiles, departments, and 24/7 emergency contact. Clean, responsive design.</p>
+        <div class="pcard-divider" style="background:linear-gradient(90deg,#0ea5e9,#06b6d4)"></div>
+        <div class="pcard-tags">
+          <span>HTML</span><span>Tailwind CSS</span><span>JavaScript</span><span>Vercel</span>
+        </div>
+        <div class="pcard-actions">
+          <a href="https://nova-hospital-3vog.vercel.app/" target="_blank" rel="noopener" class="pcard-btn-primary nova-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /pcard-grid -->
+
+  <!-- footer -->
+  <footer class="proj-footer">
+    <p>© 2026 Devraj Singh. All rights reserved.</p>
+    <a href="https://www.linkedin.com/in/devraj-singh-74235729a" target="_blank" rel="noopener" class="li-circle" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+    </a>
+  </footer>
+
+</main>
+
+<!-- Mobile Bottom Navigation -->
+<nav class="mobile-nav">
+  <div class="mobile-nav-inner">
+    <a href="index.html" class="mobile-nav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      Home
+    </a>
+    <a href="about.html" class="mobile-nav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      About
+    </a>
+    <a href="projects.html" class="mobile-nav-item active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+      Projects
+    </a>
+    <a href="contact.html" class="mobile-nav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+      Contact
+    </a>
+  </div>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
