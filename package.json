@@ -1,0 +1,15 @@
+{
+  "name": "devraj-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Devraj Singh — Web Developer",
+  "scripts": {
+    "dev": "npx live-server --port=3000",
+    "build": "echo Static site — no build needed.",
+    "start": "npx live-server --port=3000"
+  },
+  "author": "Devraj Singh <sainidevraj960@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
